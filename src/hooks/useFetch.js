@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 export const useFetch = (url, errMsg = "An error has occurred") => {
   const [data, setData] = useState([]);
   const [error, setError] = useState([]);
